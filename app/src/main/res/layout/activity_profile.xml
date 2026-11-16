@@ -1,0 +1,338 @@
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F7FF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- HEADER -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Profile"
+                android:textColor="#111827"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage your personal account"
+                android:textColor="#667085"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"/>
+
+
+            <!-- USER PROFILE CARD -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_quick_action"
+                android:padding="22dp"
+                android:layout_marginTop="22dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:gravity="center"
+                    android:background="#DCE7FF"
+                    android:text="AH"
+                    android:textColor="#1558E8"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvProfileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ayaz Hussain"
+                    android:textColor="#111827"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp"/>
+
+                <TextView
+                    android:id="@+id/tvProfileEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SmartBank Demo User"
+                    android:textColor="#667085"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="● Verified Demo Account"
+                    android:textColor="#16A34A"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+
+            <!-- ACCOUNT INFORMATION -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Information"
+                android:textColor="#111827"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_quick_action"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account Holder"
+                    android:textColor="#98A2B3"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ayaz Hussain"
+                    android:textColor="#111827"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8EDFA"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account Number"
+                    android:textColor="#98A2B3"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="••••  ••••  2048"
+                    android:textColor="#111827"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8EDFA"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account Type"
+                    android:textColor="#98A2B3"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Savings Account"
+                    android:textColor="#111827"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+
+            <!-- PROFILE SETTINGS -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Settings"
+                android:textColor="#111827"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="12dp"/>
+
+
+            <!-- PERSONAL INFORMATION -->
+
+            <TextView
+                android:id="@+id/btnPersonalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/bg_quick_action"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:text="   Personal Information                         ›"
+                android:textColor="#111827"
+                android:textSize="13sp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+
+            <!-- SECURITY -->
+
+            <TextView
+                android:id="@+id/btnSecurity"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/bg_quick_action"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:text="   Security Settings                              ›"
+                android:textColor="#111827"
+                android:textSize="13sp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+
+            <!-- HELP & SUPPORT -->
+
+            <TextView
+                android:id="@+id/btnHelpSupport"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/bg_quick_action"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:text="   Help &amp; Support                              ›"
+                android:textColor="#111827"
+                android:textSize="13sp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+
+            <!-- LOGOUT -->
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="25dp"
+                android:text="Logout"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:backgroundTint="#DC2626"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SmartBank Demo Application"
+                android:textColor="#98A2B3"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- BOTTOM NAVIGATION -->
+
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_nav_home"
+            android:contentDescription="Home"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/navCards"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_nav_cards"
+            android:contentDescription="Cards"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/navTransfer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_nav_transfer"
+            android:contentDescription="Transfer"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/navHistory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_nav_history"
+            android:contentDescription="History"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_nav_profile"
+            android:contentDescription="Profile"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

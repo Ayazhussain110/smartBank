@@ -1,0 +1,11 @@
+<resources>
+    <color name="sb_primary">#111827</color>
+    <color name="sb_secondary">#2563EB</color>
+    <color name="sb_background">#F7F8FA</color>
+    <color name="sb_surface">#FFFFFF</color>
+    <color name="sb_success">#16A34A</color>
+    <color name="sb_error">#DC2626</color>
+    <color name="sb_text_primary">#111827</color>
+    <color name="sb_text_secondary">#6B7280</color>
+    <color name="sb_border">#E5E7EB</color>
+</resources>

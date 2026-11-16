@@ -1,0 +1,287 @@
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F7FF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- HEADER -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Money Transfer"
+                android:textColor="#111827"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send money using SmartBank"
+                android:textColor="#667085"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"/>
+
+
+            <!-- AVAILABLE BALANCE -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/bg_dashboard_balance">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available Demo Balance"
+                    android:textColor="#DCE7FF"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tvTransferBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PKR 245,850.00"
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp"/>
+
+            </LinearLayout>
+
+
+            <!-- TRANSFER FORM -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_quick_action"
+                android:elevation="2dp"
+                android:padding="18dp"
+                android:layout_marginTop="22dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recipient Details"
+                    android:textColor="#111827"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="18dp"/>
+
+
+                <!-- RECEIVER NAME -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Receiver Name"
+                    android:textColor="#344054"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/etReceiverName"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:hint="Enter receiver name"
+                    android:singleLine="true"
+                    android:padding="12dp"
+                    android:textSize="13sp"
+                    android:inputType="textCapWords"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="16dp"/>
+
+
+                <!-- ACCOUNT NUMBER -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account Number"
+                    android:textColor="#344054"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/etAccountNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:hint="Enter account number"
+                    android:singleLine="true"
+                    android:padding="12dp"
+                    android:textSize="13sp"
+                    android:inputType="number"
+                    android:maxLength="24"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="16dp"/>
+
+
+                <!-- AMOUNT -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transfer Amount (PKR)"
+                    android:textColor="#344054"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/etTransferAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:hint="Enter amount"
+                    android:singleLine="true"
+                    android:padding="12dp"
+                    android:textSize="13sp"
+                    android:inputType="numberDecimal"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="16dp"/>
+
+
+                <!-- NOTE -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transfer Note (Optional)"
+                    android:textColor="#344054"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/etTransferNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:hint="Enter a note"
+                    android:singleLine="true"
+                    android:padding="12dp"
+                    android:textSize="13sp"
+                    android:inputType="textCapSentences"
+                    android:layout_marginTop="7dp"/>
+
+            </LinearLayout>
+
+
+            <!-- TRANSFER BUTTON -->
+
+            <Button
+                android:id="@+id/btnTransferNow"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="22dp"
+                android:text="Continue Transfer"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:backgroundTint="#1558E8"/>
+
+
+            <!-- INFORMATION -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Demo transfer only • No real money will be transferred"
+                android:textColor="#98A2B3"
+                android:textSize="10sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- BOTTOM NAVIGATION -->
+
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_nav_home"
+            android:contentDescription="Home"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/navCards"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_nav_cards"
+            android:contentDescription="Cards"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/navTransfer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_nav_transfer"
+            android:contentDescription="Transfer"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/navHistory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_nav_history"
+            android:contentDescription="History"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_nav_profile"
+            android:contentDescription="Profile"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

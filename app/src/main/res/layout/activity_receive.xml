@@ -1,0 +1,292 @@
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F7FF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- HEADER -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/btnBack"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="‹"
+                    android:textSize="32sp"
+                    android:textColor="#111827"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="Back"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Receive Money"
+                    android:textColor="#111827"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"/>
+
+            </LinearLayout>
+
+
+            <!-- INTRODUCTION -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receive money easily"
+                android:textColor="#111827"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share your account details to receive money."
+                android:textColor="#667085"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"/>
+
+
+            <!-- QR CODE CARD -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_quick_action"
+                android:elevation="2dp"
+                android:padding="20dp"
+                android:layout_marginTop="23dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Payment QR"
+                    android:textColor="#111827"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvQrPlaceholder"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="▦"
+                    android:textColor="#1558E8"
+                    android:textSize="100sp"
+                    android:contentDescription="Demo QR code placeholder"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scan to view demo account details"
+                    android:textColor="#667085"
+                    android:textSize="11sp"
+                    android:layout_marginTop="12dp"/>
+
+            </LinearLayout>
+
+
+            <!-- ACCOUNT DETAILS -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Details"
+                android:textColor="#111827"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="12dp"/>
+
+
+            <!-- ACCOUNT HOLDER -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_quick_action"
+                android:paddingHorizontal="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account Holder"
+                    android:textColor="#98A2B3"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/tvReceiveName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ayaz Hussain"
+                    android:textColor="#111827"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+
+            <!-- ACCOUNT NUMBER -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_quick_action"
+                android:paddingHorizontal="15dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Account Number"
+                        android:textColor="#98A2B3"
+                        android:textSize="10sp"/>
+
+                    <TextView
+                        android:id="@+id/tvReceiveAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000 0000 2048"
+                        android:textColor="#111827"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btnCopyAccount"
+                    android:layout_width="65dp"
+                    android:layout_height="38dp"
+                    android:gravity="center"
+                    android:text="Copy"
+                    android:textColor="#1558E8"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:background="#EAF0FF"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+            </LinearLayout>
+
+
+            <!-- IBAN -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_quick_action"
+                android:paddingHorizontal="15dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IBAN (Demo)"
+                        android:textColor="#98A2B3"
+                        android:textSize="10sp"/>
+
+                    <TextView
+                        android:id="@+id/tvReceiveIban"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PK00 DEMO 0000 0000 2048"
+                        android:textColor="#111827"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="1"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btnCopyIban"
+                    android:layout_width="65dp"
+                    android:layout_height="38dp"
+                    android:gravity="center"
+                    android:text="Copy"
+                    android:textColor="#1558E8"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:background="#EAF0FF"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+            </LinearLayout>
+
+
+            <!-- SHARE BUTTON -->
+
+            <Button
+                android:id="@+id/btnShareDetails"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="22dp"
+                android:text="Share Account Details"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:backgroundTint="#1558E8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Demo account information only • Not connected to a real bank"
+                android:textColor="#98A2B3"
+                android:textSize="10sp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
